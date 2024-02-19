@@ -17,9 +17,11 @@ const isPalindrome = (word: string) => {
     reversedWord += stack.pop();
   }
 
-  console.log(word);
-  console.log(reversedWord);
-  console.log(stack);
+  if (word.toLocaleLowerCase() === reversedWord.toLocaleLowerCase()) {
+    console.log(`${word} is palindrome`);
+  } else {
+    console.log(`${word} is not palindrome`);
+  }
 };
 
-isPalindrome("Emma");
+isPalindrome("Tot");
