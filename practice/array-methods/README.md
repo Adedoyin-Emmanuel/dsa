@@ -1,4 +1,3 @@
 # Array Method Practise 🚀
 
-Practising Arrary methods in a specific language, I believe will improve your **DSA** skills. This is because you're going to be writing algorithms, and most likely, you will use array methods
-
+Practising Arrary methods in a specific language, I believe will improve your **DSA** skills. This is because you're going to be writing algorithms, and most likely, you will use array methods. I will use <https://w3schools.com> as a reference
