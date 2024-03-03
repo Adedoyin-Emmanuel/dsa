@@ -25,7 +25,7 @@ const isPalindrome = (word: string) => {
 };
 
 /**
- * We can actually use an array as a stack but an array doesn't provide
+ * We can actually use an array as a stack but an array doesn't provide all the
  * methods for a stack, so let's build one.
  */
 

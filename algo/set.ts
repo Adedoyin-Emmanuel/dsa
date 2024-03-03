@@ -64,24 +64,44 @@ class MySet {
 
     return unionSet;
   };
+
+  public difference = (set) => {
+    const firstSet = this.values();
+
+    const secondSet = set;
+    const differenceSet = new MySet();
+
+    firstSet.forEach((element, index) => {
+      if (!secondSet.has(element)) {
+        differenceSet.add(element);
+      }
+    });
+
+    return differenceSet;
+  };
+
+  public subset = (set) => {
+    const firstSet = this.values();
+    const secondSet = set;
+
+    return firstSet.every((element, index) => {
+      return secondSet.has(element);
+    });
+  };
 }
 
 const set1 = new MySet();
 
 set1.add("ant");
 set1.add("bata");
+set1.add("klef");
 
 const set2 = new MySet();
 
 set2.add("baba");
-set2.add("m4a1");
-
+set2.add("klef");
 set2.add("ant");
 set2.add("bata");
-set1.add("baba");
-set1.add("m4a1");
+const result = set1.subset(set2);
 
-const result = set1.union(set2);
-
-console.log(result.length());
-console.log(result.values());
+console.log(result);
