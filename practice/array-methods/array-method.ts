@@ -55,3 +55,5 @@ guns.map((gun, index) => {
 guns.every((gun, index) => {
   console.log(gun.includes("M"));
 });
+
+
