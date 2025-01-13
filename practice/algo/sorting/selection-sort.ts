@@ -7,6 +7,7 @@ const selectionSortArray = (arr: number[]) => {
    * 2. Swap the item to the respective index
    */
 
+  
   for (let i = 0; i < arr.length - 1; i++) {
     var lowestItemIndex = i;
     for (let j = i + 1; j < arr.length; j++) {
